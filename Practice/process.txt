@@ -1,0 +1,19 @@
+
+A. add task feature
+1. first get the form data on form submit. With in the function, grab the inuput value and add to the entryList[]. make sure entryList[] is decleared globally. then call display function with entryList[], line #13
+2. crate display function which takes and arry and loop through the arry, creats tr list. after that crate div element to put the tr list by using .innerHTML
+
+
+B. delete feature
+3. create a function that receives index of the item you click, that mean you need to give a function name to onclick event of the delete button and pass index as parameter. now, inside the function, filter the item from entryList[] which has the same index of the arry as index value received. Re Call dispaly function to update the browse view.
+
+C. Switch feature
+4. When click on the right arrow button from the entry list, take that item to the bad list
+    -> on arrow button click, switchToBadList function and pass index as a parameter.
+    -> splice 1 item from the entryList[] based on the given index. this will removes the itme form entryList[]
+    -> take the actual item from teh removed array and push that item into badList since we want to swicth that task from entry list to bad list.
+    -> inorder to see the change in the browser. Re-call display function to displi int the enetry list. and also crate a function that diplsy badList arrry in the bad list side of the browser like #2 let say step 4a
+
+
+D. delete item from bad list.
+5. follow the same instruction as # feature C. above. Process is same but the fuction we call are different for delteing and switching
